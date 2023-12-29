@@ -25,7 +25,7 @@ function code() {
 
 	echo "sleeping start"
 
-	sleep 10
+	sleep 180
 
 	echo "sleeping stop"
 
