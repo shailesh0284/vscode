@@ -14,6 +14,7 @@ function code() {
 	yarn download-builtin-extensions
 
 	NODE=$(node build/lib/node.js)
+ 	echo $NODE
 	if [ ! -e $NODE ];then
 		# Load remote node
 		yarn gulp node
