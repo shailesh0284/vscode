@@ -23,15 +23,9 @@ function code() {
 
 	popd
 
-	echo "sleeping start"
-
-	sleep 180
-
-	echo "sleeping stop"
-
 	NODE_ENV=development \
 	VSCODE_DEV=1 \
-	$NODE $ROOT/scripts/code-server.js "$@"
+	node $ROOT/scripts/code-server.js "$@"
 }
 
 code "$@"
