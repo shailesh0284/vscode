@@ -131,10 +131,10 @@ class RemoteExtensionHostAgentServer extends Disposable implements IServerAPI {
 			return void res.end('OK');
 		}
 
-		// if (!httpRequestHasValidConnectionToken(this._connectionToken, req, parsedUrl)) {
-		// 	// invalid connection token
-		// 	return serveError(req, res, 403, `Forbidden.`);
-		// }
+		if (!httpRequestHasValidConnectionToken(this._connectionToken, req, parsedUrl)) {
+			// invalid connection token
+			// return serveError(req, res, 403, `Forbidden.`);
+		}
 
 		if (pathname === '/vscode-remote-resource') {
 			// Handle HTTP requests for resources rendered in the rich client (images, fonts, etc.)

@@ -49,4 +49,4 @@ RUN yarn
 EXPOSE 9888
 
 # Run VS Code build with Bash
-CMD ["./scripts/code-server.sh", "--bind", "0.0.0.0"]
+CMD ["./scripts/code-server.sh"]

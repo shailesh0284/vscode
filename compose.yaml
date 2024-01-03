@@ -1,0 +1,7 @@
+version: '3'
+services:
+  my-code:
+    image: my-code:latest
+    ports:
+      - "9888:9888"
+    command: "./scripts/code-server.sh"
